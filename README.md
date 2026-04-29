@@ -4,11 +4,11 @@ Exploring the intersection of global energy markets and economic stability. Curr
 
 import pandas as pd
 
-# 1. Load the real data from your Excel file
+
 route = r"C:\Users\itbms01\Downloads\Weekly Oil Bulletin Weekly prices with Taxes - 2024-02-19.xlsx"
 df = pd.read_excel(route)
 
-# 2. Extract price for AUSTRIA (Row 1, Column 2 based on your previous output)
+# 2. Extract price for AUSTRIA 
 # Price is per 1000L (including taxes)
 base_price_at = float(df.iloc[1, 2])
 liter_price_at = base_price_at / 1000
